@@ -1,0 +1,9 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: .6rem;
+}

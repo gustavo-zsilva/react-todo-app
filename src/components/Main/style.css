@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--main-color);
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: .2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.055);
+    background-color: transparent;
+}
+
+button.clear-todos {
+    width: 10rem;
+    align-self: flex-end;
+    padding: .6rem .8rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: .2rem;
+    border: 0;
+    font-size: 1rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+
+button.add-todo {
+    padding: .8rem;
+    border: 0;
+    font-size: 1rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: .2rem;
+    margin-top: 1rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+
+input {
+    padding: .6rem;
+    border: 1px solid var(--main-color);
+    border-radius: .2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
+}
+
+input::placeholder {
+    color: var(--main-color);
+}

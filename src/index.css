@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap';
+
+:root {
+    --main-color: #00a2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
