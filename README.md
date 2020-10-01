@@ -2,26 +2,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # ⚛️ React To-do App ⚛️
 
-This app is a simple to-do application that lets you keep track of your tasks.
+This app is a simple to-do application that lets you keep track of your tasks. 📝
+
+![React Todo App Image](https://github.com/gustavo-zsilva/images/blob/master/react-todo-app.png)
 
 ## What can it do?
 
-- Adding new tasks to the list
+- Adding new tasks to the list ✍
 - Clear the tasks you select (not added yet)
 - Clear all tasks (not added yet)
-- Clear all finished tasks
-- See how many tasks are left to do
+- Clear all finished tasks ⛔
+- See how many tasks are left to do 💯
 
 ### Also, it
 
-- Saves tasks in localStorage with and unique ID (from the UUID library)
-- Saves checked tasks
+- Saves tasks in localStorage with and unique ID (from the UUID library) 🆔
+- Saves checked tasks 📂
 
-## What technologies does it use?
+## 💡 What technologies does it use? 💡
 
-- Vanilla Javascript
-- ReactJS (for developing the visual/logical part of the app)
-- UUID (for generating the unique ID's)
+- Vanilla Javascript ⭐
+- ReactJS (for developing the visual/logical part of the app) ⚛️
+- UUID (for generating the unique ID's) 🆔
 
 ## What did I learn?
 
