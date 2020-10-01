@@ -20,6 +20,7 @@ button.clear-todos {
     border: 0;
     font-size: 1rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -44,4 +45,12 @@ input {
 
 input::placeholder {
     color: var(--main-color);
+}
+
+p {
+    width: 7rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .6rem;
+    border: 1px solid var(--main-color);
+    text-align: center;
 }
