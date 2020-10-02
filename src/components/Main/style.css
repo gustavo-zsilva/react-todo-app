@@ -10,9 +10,17 @@ main {
     background-color: transparent;
 }
 
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons {
+    display: flex;
+}
+
 button.clear-todos {
     width: 10rem;
-    align-self: flex-end;
     padding: .6rem .8rem;
     background-color: var(--main-color);
     color: white;
@@ -20,10 +28,12 @@ button.clear-todos {
     border: 0;
     font-size: 1rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
-    margin-top: 1rem;
+    margin: 1rem 1rem 0 0;
     cursor: pointer;
 }
 
+p,
+button.clear-all-todos,
 button.add-todo {
     padding: .8rem;
     border: 0;
@@ -34,6 +44,13 @@ button.add-todo {
     margin-top: 1rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.103);
     cursor: pointer;
+}
+
+button.clear-all-todos {
+    text-align: center;
+    width: 10rem;
+    background-color: red;
+
 }
 
 input {
@@ -48,9 +65,20 @@ input::placeholder {
 }
 
 p {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
     width: 7rem;
     font-family: 'Poppins', sans-serif;
     padding: .6rem;
     border: 1px solid var(--main-color);
     text-align: center;
+    color: black;
+}
+
+@media (min-width: 700px) {
+    main {
+        width: 700px;
+        margin: 2rem auto;
+    }
 }

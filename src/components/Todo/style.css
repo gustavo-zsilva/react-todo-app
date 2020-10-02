@@ -1,14 +1,40 @@
 ul {
     list-style: none;
+    margin-bottom: 1rem;
 }
 
 ul li {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: .6rem;
+    margin-bottom: 1rem;
+
+    animation: load .6s backwards;
+    cursor: text;
 }
 
 input[type=checkbox] {
     margin-right: .5rem;
     vertical-align: middle;
+    cursor: pointer;
+}
+
+img {
+    width: 25px;
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

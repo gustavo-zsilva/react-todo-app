@@ -40,11 +40,36 @@ function Todos() {
         todoNameRef.current.value = null
     }
 
+    function deleteTodo(id) {
+        const newTodos = [...todos];
+        const todosToRemain = newTodos.filter(todo => todo.id !== id)
+
+        setTodos(todosToRemain)
+    }
+
     function handleClearTodos() {
         const notCompletedTodos = todos.filter(todo => !todo.complete);
 
         setTodos(notCompletedTodos)
     }
+
+    function clearAllTodos() {
+        const newTodos = [...todos]
+        newTodos.length = 0
+
+        setTodos(newTodos)
+    }
+
+    function saveNewTodo(id, editedName) {
+        const newTodos = [...todos];
+
+        console.log(editedName);
+        
+        newTodos.map(todo => {
+            
+        })
+    }
+
 
 
     return (
@@ -69,18 +94,34 @@ function Todos() {
                         return <Todo
                                     key={todo.id}
                                     toggleTodo={toggleTodo}
+                                    deleteTodo={deleteTodo}
+                                    saveNewTodo={saveNewTodo}
                                     todo={todo}
                                 />
                     })
                 }
             </ul>
             
-            <p>
-                {todos.filter(todo => !todo.complete).length} left to do
-            </p>
+            <div className="controls">
+                <p>
+                    {todos.filter(todo => !todo.complete).length} left to do
+                </p>
 
-            <button className="clear-todos" onClick={handleClearTodos}>Clear completed</button>
+                <div className="buttons">
+                    <button
+                        className="clear-todos"
+                        onClick={handleClearTodos}>
+                            Clear completed
+                    </button>
 
+                    <button
+                        className="clear-all-todos"
+                        onClick={clearAllTodos}>
+                            Clear all todos
+                    </button>
+                </div>
+            </div>
+            
         </main>
         </>
     );
