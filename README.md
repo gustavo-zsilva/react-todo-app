@@ -9,8 +9,8 @@ This app is a simple to-do application that lets you keep track of your tasks. �
 ## What can it do?
 
 - Adding new tasks to the list ✍
-- Clear the tasks you select (not added yet)
-- Clear all tasks (not added yet)
+- Clear the tasks you select ❎
+- Clear all tasks ❌
 - Clear all finished tasks ⛔
 - See how many tasks are left to do 💯
 
